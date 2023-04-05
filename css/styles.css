@@ -73,6 +73,11 @@ a {
   background-color: var(--body-background-color);
 }
 
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
 
 .team-soc-list {
   display: flex;
@@ -136,14 +141,13 @@ a {
 .p-styles {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
 }
 
 /*--------- HEADER ---------*/
 .section-headr {
   padding: 24px 0;
   border-bottom: 1px solid var(--cornflower-color);
-
+  box-shadow: 0 0 2px var(--cloud-color);
 }
 
 .container {
@@ -224,10 +228,6 @@ a {
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.section-one-p {
-  margin-top: 8px;
-}
-
 .section-one-icon {
   display: flex;
   justify-content: center;
@@ -235,6 +235,7 @@ a {
   width: 100%;
   height: 112px;
   background-color: var(--cloud-color);
+  margin-bottom: 8px;
 }
 
 .section-two {
@@ -283,6 +284,7 @@ a {
   text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 72px;
+  color: var(--navy-blue-color);
 }
 
 .custom-list {
@@ -406,13 +408,13 @@ a {
   background-position: center;
   background-size: cover;
   flex-grow: 1;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .dark-container {
   width: 496px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .studio-header-box-title {
@@ -439,6 +441,8 @@ a {
   margin-left: auto;
   margin-right: auto;
   border: 0;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px var(--light-slate-color);
 }
 
 .studio-btn:is(:hover, :focus) {
@@ -462,16 +466,14 @@ a {
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--cornflower-color);
+  color: var(--cloud-color);
   max-width: 264px;
-}
-
-.footer-text-top {
   margin-top: 18px;
+
 }
 
 .footer-soc {
-  width: 232px;
+  width: 208px;
   height: 80px;
   margin-left: 120px;
 }
